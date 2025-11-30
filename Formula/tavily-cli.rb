@@ -3,7 +3,7 @@ class TavilyCli < Formula
   homepage "https://github.com/roboalchemist/tavily-cli"
   url "https://github.com/roboalchemist/tavily-cli/archive/refs/heads/main.tar.gz"
   version "1.0.0"
-  sha256 "e690741aba1bbd8d5530d001ec7293e51dcd24000e14be7a99f15076a1317026"
+  sha256 "68871f7e31504e2a8b3efb6e3aa60bbd03cd88e673dce5bc2e0943fa849a2317"
   license "MIT"
 
   depends_on "python@3.12"
@@ -16,7 +16,8 @@ class TavilyCli < Formula
     system Formula["python@3.12"].opt_bin/"pip3.12", "install",
            "--target=#{libexec}/vendor",
            "tavily-python",
-           "click"
+           "click",
+           "requests"
 
     # Create wrapper script
     (bin/"tavily").write <<~EOS
