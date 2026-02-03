@@ -2,8 +2,8 @@ class DocmostCli < Formula
   desc "CLI tool for interacting with the Docmost wiki API"
   homepage "https://github.com/roboalchemist/docmost-cli"
   url "https://github.com/roboalchemist/docmost-cli/archive/refs/heads/main.tar.gz"
-  version "0.1.0"
-  sha256 "efcc449079251c8b035a34005ad97579e055e4468e52a08654a998c0f24f0440"
+  version "0.2.0"
+  sha256 "84a8e3f1a52b9580234f71956d85c77b15c75ff9b9e466407b133266be69e21f"
   license "MIT"
 
   depends_on "python@3.12"
@@ -33,6 +33,11 @@ class DocmostCli < Formula
       Or set environment variables:
         export DOCMOST_URL="https://your-docmost-instance.com/api"
         export DOCMOST_TOKEN="your-token"
+
+      New in v0.2.0:
+        - Working content support via 'docmost pages import' command
+        - Enhanced 'docmost pages create --content' now works
+        - Enhanced 'docmost pages update --content' now works
     EOS
   end
 
