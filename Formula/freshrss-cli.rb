@@ -5,20 +5,20 @@
 class FreshrssCli < Formula
   desc "CLI for FreshRSS feed management via Google Reader API"
   homepage "https://github.com/roboalchemist/freshrss-cli"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.0/freshrss-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "db3c49e8cd4e43588bc15bf5d7d436ca62289c46383f442f8ddcf200b1179024"
+      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.1/freshrss-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "d4efd24e6a0bd760a10d6634b72c1a3bd53acab9e095c1ac77fc527bef9b0801"
 
       def install
         bin.install "freshrss"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.0/freshrss-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9f09303216e47131e38991260efe30a241aec1b3410118769adf7dd1ae2d3851"
+      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.1/freshrss-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "71b96b52cdbd771379781faa3503a095981beb33871eab6de0819c654a5922cd"
 
       def install
         bin.install "freshrss"
@@ -28,15 +28,15 @@ class FreshrssCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.0/freshrss-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "0f7782ea9a5bc03936033e284c29cd3ff0b5e300dc12929b5a47650dda824f90"
+      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.1/freshrss-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "6a97469f5c364d7e426067448d268b0b8ad636b332040f2f1b18d79b41165d0a"
       def install
         bin.install "freshrss"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.0/freshrss-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "55d38709ea1c758de8efedabbcad9eb4545c02d8b040450b49ec62e07570a700"
+      url "https://github.com/roboalchemist/freshrss-cli/releases/download/v0.1.1/freshrss-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "81bc69ae6211f1eb648f27556ed636ae5b6a63322d5b7759659395c37789201b"
       def install
         bin.install "freshrss"
       end
