@@ -3,7 +3,7 @@ class PerplexityCli < Formula
   homepage "https://github.com/roboalchemist/perplexity-cli"
   url "https://github.com/roboalchemist/perplexity-cli/archive/refs/heads/main.tar.gz"
   version "1.0.0"
-  sha256 "8aca8d2e8fc05749c0c2422670e361b39d6a708456bce799721d2b8df26a1da5"
+  sha256 "68c7b64bae0ec285895eef1ebd80729cc3b7c048d84f661419e24481baafee56"
   license "MIT"
 
   depends_on "python@3.12"

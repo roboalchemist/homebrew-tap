@@ -3,7 +3,7 @@ class Jopctl < Formula
   homepage "https://github.com/roboalchemist/jopctl"
   url "https://github.com/roboalchemist/jopctl/archive/refs/heads/main.tar.gz"
   version "0.2.0"
-  sha256 "e95a4df5b4e7e7a354be52f9b12c49091f6765cd21eb5e784254cc19d1a854e6"
+  sha256 "89087305cd6914087b6709fc010a7058cdd6902f95528b75216ba33d233829b1"
   license "MIT"
 
   depends_on "python@3.12"

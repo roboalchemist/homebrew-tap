@@ -3,7 +3,7 @@ class TavilyCli < Formula
   homepage "https://github.com/roboalchemist/tavily-cli"
   url "https://github.com/roboalchemist/tavily-cli/archive/refs/heads/main.tar.gz"
   version "1.1.0"
-  sha256 "3190c54ba2ef2e5ec0ac09a5936aee454c45c1f200e4f267a770fb48fc557d49"
+  sha256 "900f94b29841e673d2ae499ef619c529831263234b0f6b95847a09919b3f0db9"
   license "MIT"
 
   depends_on "python@3.12"
