@@ -3,7 +3,7 @@ class DocmostCli < Formula
   homepage "https://github.com/roboalchemist/docmost-cli"
   url "https://github.com/roboalchemist/docmost-cli/archive/refs/heads/main.tar.gz"
   version "0.2.0"
-  sha256 "84a8e3f1a52b9580234f71956d85c77b15c75ff9b9e466407b133266be69e21f"
+  sha256 "79b19fe6dffbd07b44378eee27dec457d16b3274f66ca94f28314a3cdc02a627"
   license "MIT"
 
   depends_on "python@3.12"
