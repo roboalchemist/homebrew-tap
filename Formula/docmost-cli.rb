@@ -2,7 +2,6 @@ class DocmostCli < Formula
   desc "CLI tool for interacting with the Docmost wiki API"
   homepage "https://github.com/roboalchemist/docmost-cli"
   url "https://github.com/roboalchemist/docmost-cli/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
   sha256 "cdc0b5576bcb080224072b8ae0c5dade492a4d4465602c247a4fda0c190e7953"
   license "MIT"
 
