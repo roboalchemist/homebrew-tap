@@ -1,9 +1,9 @@
 class Jopctl < Formula
   desc "CLI for the Joplin Data API with full CRUDL support"
   homepage "https://github.com/roboalchemist/jopctl"
-  url "https://github.com/roboalchemist/jopctl/archive/refs/heads/main.tar.gz"
+  url "https://github.com/roboalchemist/jopctl/archive/refs/tags/v0.2.0.tar.gz"
   version "0.2.0"
-  sha256 "89087305cd6914087b6709fc010a7058cdd6902f95528b75216ba33d233829b1"
+  sha256 "089b8929e2838e043ad1185101bc931e03d7847b7d026cdb10475af209598734"
   license "MIT"
 
   depends_on "python@3.12"
