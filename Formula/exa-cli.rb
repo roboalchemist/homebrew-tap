@@ -5,20 +5,20 @@
 class ExaCli < Formula
   desc "CLI for the Exa AI search API"
   homepage "https://github.com/roboalchemist/exa-cli"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.2/exa-cli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "c1107a3f55d8e1dcccfcfd87fa56a659276993930452ee76b6826f642db65511"
+      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.3/exa-cli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "d5c83713fb49de0875c47b86b741f1d8f2f2e0793bc96318dae0f1bd4d4a8924"
 
       def install
         bin.install "exa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.2/exa-cli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "efdcaa9807797dd44c6e99a8e524bf929129e99fcd45b974c60d35603cd421ff"
+      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.3/exa-cli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "18c5c94e12f5ea802f8470d9b886751a966afdd443bf78e0a959b72ad3c7d9c1"
 
       def install
         bin.install "exa"
@@ -28,15 +28,15 @@ class ExaCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.2/exa-cli_0.1.2_linux_amd64.tar.gz"
-      sha256 "ddd09ce3de440b2ee268d063a3e235bc60cd6351c7dff3f8a6567a8beb452bc4"
+      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.3/exa-cli_0.1.3_linux_amd64.tar.gz"
+      sha256 "0619daf11cb24937b10652171854d7922c5f4c1ace9c29f2c1a6934dbf17461b"
       def install
         bin.install "exa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.2/exa-cli_0.1.2_linux_arm64.tar.gz"
-      sha256 "af978a2b717b1589c847b551e5bbc463cf2c42dce5b916bfc7e79d716bd17b29"
+      url "https://github.com/roboalchemist/exa-cli/releases/download/v0.1.3/exa-cli_0.1.3_linux_arm64.tar.gz"
+      sha256 "ed8273615f200c45c317a8b13035f9cdc9b31cba3b9d2384fab81b98babcb89a"
       def install
         bin.install "exa"
       end
