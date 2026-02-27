@@ -5,22 +5,22 @@
 class BuildbuddyCli < Formula
   desc "CLI for the BuildBuddy Enterprise API"
   homepage "https://github.com/roboalchemist/buildbuddy-cli"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.1.0/buildbuddy-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f54a1edd31e02cc92beef3041fbd42e89d364f5877b70a207b0850a752e73da9"
+      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.2.0/buildbuddy-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ab146220eb8cc042bcd758951a8d9465c097118c85fb3899d228c72e4952a99a"
 
-      def install
+      define_method(:install) do
         bin.install "buildbuddy-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.1.0/buildbuddy-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "fbe2e1657fb2854296309d1e571696d4450c6fc376f01dafef5d02e303299f17"
+      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.2.0/buildbuddy-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6ceb8476fa4a654e9a5f1074046d69834c35fa5fd5308c96ab783db77facc104"
 
-      def install
+      define_method(:install) do
         bin.install "buildbuddy-cli"
       end
     end
@@ -28,16 +28,16 @@ class BuildbuddyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.1.0/buildbuddy-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "202070d9d94127ae856ec80663e904b403db90680ae8cfdafe9af8d58a1c5a16"
-      def install
+      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.2.0/buildbuddy-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "070a8cbb4e980c9ff841c225921afe582c46400e6d7507db458b78a021d45029"
+      define_method(:install) do
         bin.install "buildbuddy-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.1.0/buildbuddy-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "09db30f66e8ebdfa6eaf8e066f91506889a0222b0d13a8ce59ad18f0a06281ac"
-      def install
+      url "https://github.com/roboalchemist/buildbuddy-cli/releases/download/v0.2.0/buildbuddy-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "698032adc87e8a5de767a1ae85b21269277a00dc21593bcb9a1e83ef738a8a30"
+      define_method(:install) do
         bin.install "buildbuddy-cli"
       end
     end
