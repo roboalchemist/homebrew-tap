@@ -1,8 +1,8 @@
 class LinearCli < Formula
   desc "Comprehensive command-line interface for Linear's API"
   homepage "https://github.com/roboalchemist/linear-cli"
-  url "https://github.com/roboalchemist/linear-cli/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "79b0fe794e2b3c3ffbc999fd9458aec630d58682e2d5db0d3a25f4cd1dc94684"
+  url "https://github.com/roboalchemist/linear-cli/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "fafe65e8925187fb6e7d9b83be1602215edc433c7d686f0320e42ee7f3e11dc6"
   license "MIT"
   head "https://github.com/roboalchemist/linear-cli.git", branch: "master"
 
