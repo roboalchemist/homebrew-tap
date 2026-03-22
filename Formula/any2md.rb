@@ -6,20 +6,18 @@ class Any2md < Formula
   license "MIT"
 
   depends_on "python@3.12"
+  depends_on "uv"
 
   def install
-    # Install the package and core dependencies to libexec
-    system Formula["python@3.12"].opt_bin/"pip3.12", "install",
+    python = Formula["python@3.12"].opt_bin/"python3.12"
+    uv = Formula["uv"].opt_bin/"uv"
+
+    # Install typer and all transitive deps to libexec/vendor
+    system uv, "pip", "install",
+           "--python=#{python}",
            "--target=#{libexec}/vendor",
-           "--no-deps",
            "typer>=0.9.0",
-           "typing-extensions",
-           "click",
-           "rich",
-           "shellingham",
-           "markdown-it-py",
-           "mdurl",
-           "Pygments"
+           "typing-extensions"
 
     # Install the package itself
     libexec.install Dir["src/any2md"]
@@ -28,7 +26,7 @@ class Any2md < Formula
     (bin/"any2md").write <<~EOS
       #!/bin/bash
       export PYTHONPATH="#{libexec}/vendor:#{libexec}:$PYTHONPATH"
-      exec "#{Formula["python@3.12"].opt_bin}/python3.12" -m any2md.cli "$@"
+      exec "#{python}" -m any2md.cli "$@"
     EOS
   end
 
@@ -36,25 +34,25 @@ class Any2md < Formula
     <<~EOS
       any2md base install handles zero-dep converters (csv, data, db, nb, eml, org, tex, man).
 
-      For AI-powered converters, install optional deps into the Homebrew Python:
+      For AI-powered converters, install optional deps:
 
         # Audio/video transcription
-        pip3.12 install "mlx-audio[stt]" yt-dlp
+        uv pip install "mlx-audio[stt]" yt-dlp
 
         # PDF extraction
-        pip3.12 install pymupdf4llm
+        uv pip install pymupdf4llm
 
         # Image OCR (Qwen3.5 via mlx-vlm)
-        pip3.12 install mlx-vlm
+        uv pip install mlx-vlm
 
         # Web page conversion (ReaderLM-v2)
-        pip3.12 install mlx-lm httpx
+        uv pip install mlx-lm httpx
 
         # Office documents
-        pip3.12 install markitdown
+        uv pip install markitdown
 
       Pre-download AI models:
-        python3.12 -c "from any2md.cli import app" && any2md --help
+        any2md --help
     EOS
   end
 
