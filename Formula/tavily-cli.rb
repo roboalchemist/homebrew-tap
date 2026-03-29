@@ -1,8 +1,8 @@
 class TavilyCli < Formula
   desc "Command-line interface for the Tavily AI search API"
   homepage "https://github.com/roboalchemist/tavily-cli"
-  url "https://github.com/roboalchemist/tavily-cli/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "815adcabcdf6f8ad6b045bac6922ecf62bbd6caa99929e2d514c2d35356dec16"
+  url "https://github.com/roboalchemist/tavily-cli/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "d185e1fc945b1769c88332487dbb4a8bea7f5314c43af52d30218535a1c1f2d3"
   license "MIT"
 
   depends_on "python@3.12"
