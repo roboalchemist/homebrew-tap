@@ -1,8 +1,8 @@
 class Any2md < Formula
   desc "Convert any media, document, or data format to markdown — local AI on Apple Silicon"
   homepage "https://github.com/roboalchemist/any2md"
-  url "https://github.com/roboalchemist/any2md/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "f4ab3a3de9f7d6478b2dbf4875addf7b2b07ea869a1c4432e8e4fdf8d091a313"
+  url "https://github.com/roboalchemist/any2md/archive/refs/tags/v0.3.3.tar.gz"
+  sha256 "d43765780958b65bb6469ba7552d9b38133e0f286617450f262e1fc5d9aba638"
   license "MIT"
 
   depends_on "python@3.12"
