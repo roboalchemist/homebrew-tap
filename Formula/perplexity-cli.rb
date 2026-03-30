@@ -8,6 +8,12 @@ class PerplexityCli < Formula
   depends_on "python@3.12"
 
   def install
+    # Extract staging directory (set by Homebrew's bottle DSL)
+    staging = Dir.pwd
+
+    # Remove Homebrew-contaminated .git so get_version() falls back to default
+    rm_rf ".git"
+
     # Copy the script to libexec
     libexec.install "perplexity.py"
 
