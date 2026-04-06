@@ -1,8 +1,8 @@
 class DesearchCli < Formula
   desc "CLI for Desearch AI - contextual AI search across web, HN, Reddit, Wikipedia, YouTube, Twitter, arXiv"
   homepage "https://github.com/roboalchemist/desearch-cli"
-  url "https://github.com/roboalchemist/desearch-cli.git", tag: "v0.1.8", using: :git
-  version "0.1.8"
+  url "https://github.com/roboalchemist/desearch-cli.git", tag: "v0.1.9", using: :git
+  version "0.1.9"
   license "MIT"
 
   depends_on "go" => :build
