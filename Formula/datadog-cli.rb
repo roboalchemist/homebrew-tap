@@ -5,21 +5,21 @@
 class DatadogCli < Formula
   desc "Read-only CLI for querying Datadog APIs"
   homepage "https://github.com/roboalchemist/datadog-cli"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.11/datadog-cli_0.1.11_darwin_amd64.tar.gz"
-      sha256 "9ff23ae330756405f7a1c4269e5fabfb1db4ad456803a70410868955136c0ff2"
+      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.12/datadog-cli_0.1.12_darwin_amd64.tar.gz"
+      sha256 "e2a2edec772592677ea681e7d6d2a0acd225e0b842f741a112702b33d5e04ea5"
 
       define_method(:install) do
         bin.install "datadog-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.11/datadog-cli_0.1.11_darwin_arm64.tar.gz"
-      sha256 "ee320592b8f39fbc973471cb73922d6cf5a4df4d98a7950128278d9440bc2a17"
+      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.12/datadog-cli_0.1.12_darwin_arm64.tar.gz"
+      sha256 "2dc46b30db3d1808e4433a50604cd806a59c0f4cd012eaf540f4f890a7b889f6"
 
       define_method(:install) do
         bin.install "datadog-cli"
@@ -29,15 +29,15 @@ class DatadogCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.11/datadog-cli_0.1.11_linux_amd64.tar.gz"
-      sha256 "5762a7bcf2c3c043fa078cf04ecb3c1f94579cfb53e7dfa8c1c6cd8b28435146"
+      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.12/datadog-cli_0.1.12_linux_amd64.tar.gz"
+      sha256 "3c1b4e13e85b8e452b2cb1b1adbc6f279db42081e2894df7c5603d00dd9ca2b6"
       define_method(:install) do
         bin.install "datadog-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.11/datadog-cli_0.1.11_linux_arm64.tar.gz"
-      sha256 "aa0d93fa580b9cea4ba33f18cc9d4a035f359103bf0ee2b2aaf3986a5e4514d4"
+      url "https://github.com/roboalchemist/datadog-cli/releases/download/v0.1.12/datadog-cli_0.1.12_linux_arm64.tar.gz"
+      sha256 "2ad82b4398f254c729a7845b7e3d9815a41e3fc6981b5ca2e967c807ef1e43ab"
       define_method(:install) do
         bin.install "datadog-cli"
       end
