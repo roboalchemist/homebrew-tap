@@ -1,8 +1,8 @@
 class PerplexityCli < Formula
   desc "Command-line client for the Perplexity AI API"
   homepage "https://github.com/roboalchemist/perplexity-cli"
-  url "https://github.com/roboalchemist/perplexity-cli/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "00dc0f98bc32e8088556bb1262d32d29095afb224da151b46095e68a6124a324"
+  url "https://github.com/roboalchemist/perplexity-cli/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "ad42cdf6185e3ff0de9f7b38896a31e184da1426cb19e4359329098ba4738c3a"
   license "MIT"
 
   depends_on "python@3.12"
