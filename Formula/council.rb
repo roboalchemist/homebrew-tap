@@ -1,8 +1,8 @@
 class Council < Formula
   desc "Query multiple AI CLI coding assistants in parallel and compare responses"
   homepage "https://github.com/roboalchemist/council"
-  url "https://github.com/roboalchemist/council.git", tag: "v0.2.8", using: :git
-  version "0.2.8"
+  url "https://github.com/roboalchemist/council.git", tag: "v0.2.9", using: :git
+  version "0.2.9"
   license "MIT"
 
   depends_on "python@3.12"
