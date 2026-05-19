@@ -10,7 +10,10 @@ class Icerun < Formula
   def install
     system Formula["python@3.12"].opt_bin/"python3.12", "-m", "venv", libexec/"venv"
     system "#{libexec}/venv/bin/pip", "install", "--upgrade", "pip"
-    system "#{libexec}/venv/bin/pip", "install", "."
+    # --prefer-binary avoids forced source builds for lxml/pydantic-core/etc.
+    # in the Homebrew sandbox, where wheel availability matters more than the
+    # marginal speed of a custom-compiled C extension.
+    system "#{libexec}/venv/bin/pip", "install", "--prefer-binary", "."
 
     bin.install_symlink "#{libexec}/venv/bin/icerun"
   end
