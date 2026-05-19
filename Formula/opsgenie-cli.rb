@@ -5,21 +5,21 @@
 class OpsgenieCli < Formula
   desc "CLI for the OpsGenie REST API v2"
   homepage "https://github.com/roboalchemist/opsgenie-cli"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.2/opsgenie-cli_0.2.2_darwin_amd64.tar.gz"
-      sha256 "fe1ab01384d4e0ec790517d9ba38867056056706303ee91b88d350ba101476cb"
+      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.3/opsgenie-cli_0.2.3_darwin_amd64.tar.gz"
+      sha256 "3a6eda847ed791f297a78636c7bc7cdda1c619aaac398a7c1f9c14fa9ff2ece6"
 
       define_method(:install) do
         bin.install "opsgenie-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.2/opsgenie-cli_0.2.2_darwin_arm64.tar.gz"
-      sha256 "ea4c55c48c4d2e6b766b9202ed204254cfa459a0450c4111aaf3bbedfed7e869"
+      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.3/opsgenie-cli_0.2.3_darwin_arm64.tar.gz"
+      sha256 "1db05a40b8a9510735b647e71f3f915ecd9e23a174b35307ee843a6721b396ec"
 
       define_method(:install) do
         bin.install "opsgenie-cli"
@@ -29,15 +29,15 @@ class OpsgenieCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.2/opsgenie-cli_0.2.2_linux_amd64.tar.gz"
-      sha256 "6571488909cb9129717a0f6dee52fb0a6900bfafbc104aa3a9241ed584ca1e71"
+      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.3/opsgenie-cli_0.2.3_linux_amd64.tar.gz"
+      sha256 "815a9a8ffb7fc4d2da21dcedbaae3ea512a379fa11decaf55a12412f001efbed"
       define_method(:install) do
         bin.install "opsgenie-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.2/opsgenie-cli_0.2.2_linux_arm64.tar.gz"
-      sha256 "4f8eff8bcbe9efb52404de98003d58fd774c83fce3dfca6aa72666c03e7e9697"
+      url "https://github.com/roboalchemist/opsgenie-cli/releases/download/v0.2.3/opsgenie-cli_0.2.3_linux_arm64.tar.gz"
+      sha256 "b7acc42a4e562445eecc7cae9b4c99c7f74a3754748d492677ff16fcfcb2e679"
       define_method(:install) do
         bin.install "opsgenie-cli"
       end
