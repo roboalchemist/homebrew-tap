@@ -23,6 +23,7 @@ brew install <formula>
 | `md2notion` | Convert Markdown documents to Notion pages |
 | `opsgenie-cli` | CLI for OpsGenie REST API v2 |
 | `perplexity-cli` | Command-line client for Perplexity AI API |
+| `reticle-mtplx` | Install and operate a local MTPLX autocomplete service for Reticle |
 | `tavily-cli` | CLI for the Tavily AI search API |
 
 ## Usage
