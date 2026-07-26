@@ -1,8 +1,8 @@
 class ReticleMtplx < Formula
   desc "Install and operate a local MTPLX autocomplete service for Reticle"
   homepage "https://github.com/roboalchemist/reticle"
-  url "https://github.com/roboalchemist/reticle/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "ac67cfa49c864ea25b6dbd43add4e7b6a9b65a6b3374fa0a89910d37e6ff51c0"
+  url "https://github.com/roboalchemist/reticle/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "2afc13d1fbdad5c425c35f5f4be61a2756345c1c0ef557df6ba34050b1d1e2b1"
   license "MIT"
 
   depends_on arch: :arm64
@@ -21,6 +21,7 @@ class ReticleMtplx < Formula
       Then monitor it with:
 
         reticle-mtplx status
+        reticle-mtplx doctor
         reticle-mtplx monitor
     EOS
   end
