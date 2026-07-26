@@ -24,6 +24,7 @@ homebrew-tap/
     ├── md2notion.rb
     ├── opsgenie-cli.rb
     ├── perplexity-cli.rb
+    ├── reticle-mtplx.rb
     └── tavily-cli.rb
 ```
 
@@ -41,6 +42,7 @@ homebrew-tap/
 | `md2notion` | Convert Markdown documents to Notion pages | Python | pip |
 | `opsgenie-cli` | CLI for OpsGenie REST API v2 | Go | GoReleaser binary |
 | `perplexity-cli` | Command-line client for Perplexity AI API | Python | pip |
+| `reticle-mtplx` | Managed local MTPLX autocomplete service for Reticle | POSIX shell | tagged source archive |
 | `tavily-cli` | CLI for the Tavily AI search API | Python | pip |
 
 ## Formula Patterns
