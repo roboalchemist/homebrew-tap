@@ -1,5 +1,10 @@
 # Worklog
 
+## 2026-07-27 — Reticle MLX 0.7.0
+
+- Bumped the CLI formula and signed/notarized app cask to Reticle MLX 0.7.0.
+- Verified the cask digest against the GitHub release DMG. This is the bootstrap release for Sparkle auto-updates and carries the current white-transparent Reticle menu-bar template icon.
+
 ## 2026-07-27 — Reticle MLX app and generic service
 
 - Added `reticle-mlx`, the renamed model-agnostic MLX-LM service manager with Seed, Qwen, and custom-model support.
