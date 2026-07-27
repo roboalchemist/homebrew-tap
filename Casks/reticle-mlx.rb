@@ -1,6 +1,6 @@
 cask "reticle-mlx" do
-  version "0.7.0"
-  sha256 "192f5785c61eb2f1a565e1afde954b81dd7e5a9f1442b3f6d6acda2a577a52b3"
+  version "0.8.0"
+  sha256 "2f83fc92a2ac992ed3f88dba76be884f058c051c496f0300d8a0cee30b330832"
 
   url "https://github.com/roboalchemist/reticle-mlx/releases/download/v#{version}/Reticle-MLX-#{version}.dmg"
   name "Reticle MLX"
@@ -16,6 +16,12 @@ cask "reticle-mlx" do
                   content: <<~SH
                     #!/bin/sh
                     exec /bin/sh '#{appdir}/Reticle MLX.app/Contents/Resources/reticle-mlx' "$@"
+                  SH
+
+  command_wrapper "reticle-mtplx",
+                  content: <<~SH
+                    #!/bin/sh
+                    exec /bin/sh '#{appdir}/Reticle MLX.app/Contents/Resources/reticle-mtplx' "$@"
                   SH
 
   zap trash: [
