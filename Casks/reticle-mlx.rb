@@ -11,6 +11,7 @@ cask "reticle-mlx" do
   depends_on macos: :ventura
 
   app "Reticle MLX.app"
+  binary "#{appdir}/Reticle MLX.app/Contents/Resources/reticle-mlx"
 
   zap trash: [
     "~/Library/Preferences/io.github.roboalchemist.reticle-mlx.plist",
