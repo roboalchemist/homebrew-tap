@@ -1,5 +1,11 @@
 # Worklog
 
+## 2026-07-27 — Reticle Seed-Coder MLX formula
+
+- Added an Apple-Silicon-only formula for the Reticle 0.5.0 Seed-Coder MLX service manager.
+- Depend on Homebrew Python 3.12 while leaving the pinned MLX/MLX-LM environment and public model download isolated under the user's Reticle runtime directory.
+- Verified the source archive checksum and Ruby style. The service manager itself passed a clean installation, public-model download, launchd startup, runtime-version check, suffix-dependent FIM doctor probe, and live Reticle integration on an M3 Max.
+
 ## 2026-07-26 — Reticle MTPLX formula
 
 - Added a macOS/Apple-Silicon formula that installs the versioned Reticle MTPLX service manager as `reticle-mtplx`.
