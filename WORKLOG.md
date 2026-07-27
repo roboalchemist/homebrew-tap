@@ -4,7 +4,8 @@
 
 - Bumped the CLI formula and signed/notarized app cask to Reticle MLX 0.7.0.
 - Verified the cask digest against the GitHub release DMG. This is the bootstrap release for Sparkle auto-updates and carries the current white-transparent Reticle menu-bar template icon.
-- Linked the app's bundled `reticle-mlx` service manager from the cask so a cask install provides both GUI and CLI even when Homebrew leaves the same-named formula keg unlinked.
+- Added a cask command wrapper for the bundled `reticle-mlx` service manager so a cask install provides both GUI and CLI even when Homebrew leaves the same-named formula keg unlinked.
+- A direct `binary` symlink to the quarantined shell resource stalled during Gatekeeper assessment. The Homebrew-generated wrapper explicitly runs the sealed resource with `/bin/sh`, matching direct invocation while leaving the notarized app and quarantine metadata intact.
 
 ## 2026-07-27 — Reticle MLX app and generic service
 
