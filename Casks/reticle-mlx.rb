@@ -1,6 +1,6 @@
 cask "reticle-mlx" do
-  version "0.6.0"
-  sha256 "1d6f739f4343df53599298a62514a8262771900338025fed832df93ac9dd9bc0"
+  version "0.7.0"
+  sha256 "192f5785c61eb2f1a565e1afde954b81dd7e5a9f1442b3f6d6acda2a577a52b3"
 
   url "https://github.com/roboalchemist/reticle-mlx/releases/download/v#{version}/Reticle-MLX-#{version}.dmg"
   name "Reticle MLX"
