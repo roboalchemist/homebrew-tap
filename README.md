@@ -23,8 +23,15 @@ brew install <formula>
 | `md2notion` | Convert Markdown documents to Notion pages |
 | `opsgenie-cli` | CLI for OpsGenie REST API v2 |
 | `perplexity-cli` | Command-line client for Perplexity AI API |
+| `reticle-mlx` | Model-agnostic MLX autocomplete service manager for Reticle |
 | `reticle-mtplx` | Install and operate a local MTPLX autocomplete service for Reticle |
 | `tavily-cli` | CLI for the Tavily AI search API |
+
+## Casks
+
+| Cask | Description |
+|------|-------------|
+| `reticle-mlx` | Signed and notarized Reticle MLX menu-bar app |
 
 ## Usage
 
@@ -35,6 +42,9 @@ brew install roboalchemist/tap/exa-cli
 # Or tap first, then install without prefix
 brew tap roboalchemist/tap
 brew install perplexity-cli
+
+# Native Reticle MLX menu-bar app
+brew install --cask roboalchemist/tap/reticle-mlx
 ```
 
 ## Adding or Updating Formulas
