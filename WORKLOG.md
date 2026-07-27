@@ -6,6 +6,7 @@
 - Verified the cask digest against the GitHub release DMG. This is the bootstrap release for Sparkle auto-updates and carries the current white-transparent Reticle menu-bar template icon.
 - Added a cask command wrapper for the bundled `reticle-mlx` service manager so a cask install provides both GUI and CLI even when Homebrew leaves the same-named formula keg unlinked.
 - A direct `binary` symlink to the quarantined shell resource stalled during Gatekeeper assessment. The Homebrew-generated wrapper explicitly runs the sealed resource with `/bin/sh`, matching direct invocation while leaving the notarized app and quarantine metadata intact.
+- Homebrew 6 derives the linked command name from the first `command_wrapper` argument and rejects the newer documented `target:` option, so the cask names the wrapper `reticle-mlx` directly.
 
 ## 2026-07-27 — Reticle MLX app and generic service
 

@@ -12,8 +12,7 @@ cask "reticle-mlx" do
 
   app "Reticle MLX.app"
 
-  command_wrapper "reticle-mlx.wrapper.sh",
-                  target:  "reticle-mlx",
+  command_wrapper "reticle-mlx",
                   content: <<~SH
                     #!/bin/sh
                     exec /bin/sh '#{appdir}/Reticle MLX.app/Contents/Resources/reticle-mlx' "$@"
