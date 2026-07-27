@@ -1,8 +1,8 @@
 class ReticleMtplx < Formula
   desc "Install and operate a local MTPLX autocomplete service for Reticle"
-  homepage "https://github.com/roboalchemist/reticle"
-  url "https://github.com/roboalchemist/reticle/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "2afc13d1fbdad5c425c35f5f4be61a2756345c1c0ef557df6ba34050b1d1e2b1"
+  homepage "https://github.com/roboalchemist/reticle-mlx"
+  url "https://github.com/roboalchemist/reticle-mlx/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "8df9657f96582c6caa5d1f865c24901fdb7b63c394fd410e77fe620c55193aec"
   license "MIT"
 
   depends_on arch: :arm64
