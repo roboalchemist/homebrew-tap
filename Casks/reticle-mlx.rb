@@ -11,7 +11,13 @@ cask "reticle-mlx" do
   depends_on macos: :ventura
 
   app "Reticle MLX.app"
-  binary "#{appdir}/Reticle MLX.app/Contents/Resources/reticle-mlx"
+
+  command_wrapper "reticle-mlx.wrapper.sh",
+                  target:  "reticle-mlx",
+                  content: <<~SH
+                    #!/bin/sh
+                    exec /bin/sh '#{appdir}/Reticle MLX.app/Contents/Resources/reticle-mlx' "$@"
+                  SH
 
   zap trash: [
     "~/Library/Preferences/io.github.roboalchemist.reticle-mlx.plist",
