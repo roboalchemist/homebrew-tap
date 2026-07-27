@@ -1,5 +1,12 @@
 # Worklog
 
+## 2026-07-27 — Reticle MLX app and generic service
+
+- Added `reticle-mlx`, the renamed model-agnostic MLX-LM service manager with Seed, Qwen, and custom-model support.
+- Added the Developer ID signed, Apple-notarized, and stapled Reticle MLX 0.6.0 menu-bar app as a cask.
+- Deprecated the old `reticle-seed-mlx` formula without removing it so existing installations retain a clear migration path.
+- Verified the release archive and DMG checksums against the public GitHub assets.
+
 ## 2026-07-27 — Reticle Seed-Coder MLX formula
 
 - Added an Apple-Silicon-only formula for the Reticle 0.5.0 Seed-Coder MLX service manager.

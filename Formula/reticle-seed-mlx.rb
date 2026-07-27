@@ -5,6 +5,8 @@ class ReticleSeedMlx < Formula
   sha256 "a4397fd7868ec4939ca6ba30605c5e542d47e3eb694e8a44b6a3f11826f09df6"
   license "MIT"
 
+  deprecate! date: "2026-07-27", because: "was renamed to reticle-mlx"
+
   depends_on arch: :arm64
   depends_on :macos
   depends_on "python@3.12"
