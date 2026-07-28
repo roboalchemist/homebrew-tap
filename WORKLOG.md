@@ -1,5 +1,13 @@
 # Worklog
 
+## 2026-07-28 — Reticle MLX 0.10.0
+
+- Bumped the cask to the signed and notarized 0.10.0 DMG with the fixed
+  settings sidebar, draggable Activity pane, Logs tab, and Benchmark tab.
+- Independently downloaded the public GitHub release, matched SHA-256
+  `6d27c8a01e07b5c8840fa5a8f748f50fbadb1c1d5c2af694bbb877fbb1149673`,
+  and confirmed Gatekeeper reports `Notarized Developer ID`.
+
 ## 2026-07-27 — Reticle MLX 0.9.0
 
 - Bumped the cask to the signed and notarized 0.9.0 DMG containing the
