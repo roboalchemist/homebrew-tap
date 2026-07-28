@@ -1,5 +1,13 @@
 # Worklog
 
+## 2026-07-27 — Reticle MLX 0.9.0
+
+- Bumped the cask to the signed and notarized 0.9.0 DMG containing the
+  resizable sidebar settings window.
+- Downloaded the public GitHub release independently, matched SHA-256
+  `cd7543e247e0aedb864f5d1f43a38cc0aa16fa75596eb4c021007c6a8b0eadcf`,
+  and confirmed Gatekeeper reports `Notarized Developer ID`.
+
 ## 2026-07-27 — Reticle MLX 0.7.0
 
 - Bumped the CLI formula and signed/notarized app cask to Reticle MLX 0.7.0.
