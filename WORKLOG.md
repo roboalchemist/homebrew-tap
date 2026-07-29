@@ -1,5 +1,16 @@
 # Worklog
 
+## 2026-07-29 — Reticle MLX 0.12.0
+
+- Bumped the cask and CLI formula to Reticle MLX 0.12.0 with model-card
+  activation, upper-right model controls, and compact inline model metadata.
+- Independently downloaded the public GitHub DMG and source archive and matched
+  SHA-256 values
+  `9046de6be7f15b4dbe2e315b4eef180f954d585a20a0cfb0fa0a68a46babc475`
+  and
+  `7895a21a249d00fce0c08ef20d4e3d7f86087ab22cbd37c0c82d762b335337e3`.
+- Confirmed Gatekeeper reports `Notarized Developer ID` for the public DMG.
+
 ## 2026-07-28 — Reticle MLX 0.10.0
 
 - Bumped the cask to the signed and notarized 0.10.0 DMG with the fixed
