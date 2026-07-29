@@ -1,8 +1,8 @@
 class ReticleMlx < Formula
   desc "Install and operate local MLX code-completion models for Reticle"
   homepage "https://github.com/roboalchemist/reticle-mlx"
-  url "https://github.com/roboalchemist/reticle-mlx/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "7895a21a249d00fce0c08ef20d4e3d7f86087ab22cbd37c0c82d762b335337e3"
+  url "https://github.com/roboalchemist/reticle-mlx/archive/refs/tags/v0.12.1.tar.gz"
+  sha256 "a8bfa1fbf38543e6916a8bae161298d802bfd2fac0ca09e141f28afc6e66b70f"
   license "MIT"
 
   depends_on arch: :arm64

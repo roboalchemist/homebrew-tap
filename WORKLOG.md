@@ -1,5 +1,16 @@
 # Worklog
 
+## 2026-07-29 — Reticle MLX 0.12.1
+
+- Bumped the cask and CLI formula to Reticle MLX 0.12.1 with distinct
+  `Starting` and `Unhealthy` service states.
+- Independently downloaded the public GitHub DMG and source archive and matched
+  SHA-256 values
+  `2c810abbe86ac514eec0c342ee7a2fc89a7bda434a1dc024d7f29416038e3724`
+  and
+  `a8bfa1fbf38543e6916a8bae161298d802bfd2fac0ca09e141f28afc6e66b70f`.
+- Confirmed Gatekeeper reports `Notarized Developer ID` for the public DMG.
+
 ## 2026-07-29 — Reticle MLX 0.12.0
 
 - Bumped the cask and CLI formula to Reticle MLX 0.12.0 with model-card
