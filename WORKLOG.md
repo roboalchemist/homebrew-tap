@@ -1,5 +1,16 @@
 # Worklog
 
+## 2026-07-29 — Reticle MLX 0.12.2
+
+- Bumped the cask and CLI formula to Reticle MLX 0.12.2 with the macOS 26
+  fresh-LaunchAgent demand-start fix.
+- Independently downloaded the public GitHub DMG and source archive and matched
+  SHA-256 values
+  `f99be8ccee6960b373a24cac5943acaa2471612cb2eab0a687aaee369a48b7be`
+  and
+  `db1322875b49e9efcf684ff31cd9418cea535b87106ef84cfb1e8e36bbde6c14`.
+- Confirmed Gatekeeper reports `Notarized Developer ID` for the public DMG.
+
 ## 2026-07-29 — Reticle MLX 0.12.1
 
 - Bumped the cask and CLI formula to Reticle MLX 0.12.1 with distinct
