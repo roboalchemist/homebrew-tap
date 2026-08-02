@@ -25,7 +25,7 @@ class Council < Formula
   def caveats
     <<~EOS
       Council queries multiple AI CLI tools in parallel:
-        claude, gemini (3 Pro), codex, cursor-agent
+        claude, gemini (3 Pro), codex, kimicode (K3), cursor-agent
 
       Usage:
         council "Review this code"              # Default: read-only mode
