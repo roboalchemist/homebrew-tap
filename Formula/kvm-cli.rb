@@ -11,7 +11,7 @@ class KvmCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.3/kvm-cli_0.4.3_darwin_amd64.tar.gz"
-      sha256 "b4c687b9a62a80f0788f07e4fee5a0446780a60400ce946f7663cebef0dedfab"
+      sha256 "5def2f73721e372b9c13dde57896b1eadbdced26fcf7d3103d161f39ceb1fc75"
 
       define_method(:install) do
         bin.install "kvm-cli"
@@ -19,7 +19,7 @@ class KvmCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.3/kvm-cli_0.4.3_darwin_arm64.tar.gz"
-      sha256 "b4494fc16c50af9e492962b30d76dffa7f5e16733c29937e7509e4dcd46098b9"
+      sha256 "bb68ab52f4574dc12454a0f2490682fb5eedda1956cd4b62e633a383d5703283"
 
       define_method(:install) do
         bin.install "kvm-cli"
@@ -30,14 +30,14 @@ class KvmCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.3/kvm-cli_0.4.3_linux_amd64.tar.gz"
-      sha256 "1e304252ff69542806d708b5347fecae99e2afd41fd88a41a6a9ed852a3003bc"
+      sha256 "46b02744676fe12c846bc8be5ddf2e497498d0e318d54311fe67acfde9d41f87"
       define_method(:install) do
         bin.install "kvm-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.3/kvm-cli_0.4.3_linux_arm64.tar.gz"
-      sha256 "19138248e2d83d6350d1f60f9a23370a7587ec5b4ece32a91e3ce5b0e4ed16fa"
+      sha256 "002fcb1081063538a61720883b2ddb508ecefc84f576736546e9a3d9c139217e"
       define_method(:install) do
         bin.install "kvm-cli"
       end
