@@ -5,21 +5,21 @@
 class KvmCli < Formula
   desc "Agent-first CLI for GL.iNet / PiKVM remote KVMs, VNC, and RustDesk"
   homepage "https://github.com/roboalchemist/kvm-cli"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.1/kvm-cli_0.4.1_darwin_amd64.tar.gz"
-      sha256 "7bfb289339878c49a51f078eeef5892d963b8146604d16449fc68522349052d6"
+      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.2/kvm-cli_0.4.2_darwin_amd64.tar.gz"
+      sha256 "bb81e08902e01f3419db941b9be67187dbc2285da1a891d2fc9bb79a052f9cb5"
 
       define_method(:install) do
         bin.install "kvm-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.1/kvm-cli_0.4.1_darwin_arm64.tar.gz"
-      sha256 "08060461bb3809ad4227f1857acd181b76576410d4946455e27374d0f7baeca1"
+      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.2/kvm-cli_0.4.2_darwin_arm64.tar.gz"
+      sha256 "25f934d51e1c97e894f5d8d2621718fed31b6571643735d4cd6bbfa87c014426"
 
       define_method(:install) do
         bin.install "kvm-cli"
@@ -29,15 +29,15 @@ class KvmCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.1/kvm-cli_0.4.1_linux_amd64.tar.gz"
-      sha256 "70abc35418bfbc8ec925d8e4c47e02e486c45cf07aa768c4364333362917e2f0"
+      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.2/kvm-cli_0.4.2_linux_amd64.tar.gz"
+      sha256 "5e95cc3b72d2a320437ee7187dd4bb0aa4196734e9f27dbfe9f62e5a91739907"
       define_method(:install) do
         bin.install "kvm-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.1/kvm-cli_0.4.1_linux_arm64.tar.gz"
-      sha256 "3c30306110ba50e8637f267c003e38bc664b25d7e86028da0442d61e2bb6e797"
+      url "https://github.com/roboalchemist/kvm-cli/releases/download/v0.4.2/kvm-cli_0.4.2_linux_arm64.tar.gz"
+      sha256 "657034eb0ddb955d655e06480a560b36e43a3d7034afbfa4c9604fd4a688fd07"
       define_method(:install) do
         bin.install "kvm-cli"
       end
